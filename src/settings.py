@@ -53,7 +53,7 @@ INSTALLED_APPS = [
     "organizer.apps.OrganizerConfig",
     
 ]
-CORS_ORIGIN_ALLOW_ALL=True
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -66,6 +66,7 @@ MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
 ]
+CORS_ORIGIN_ALLOW_ALL=True
 
 ROOT_URLCONF = 'src.urls'
 
