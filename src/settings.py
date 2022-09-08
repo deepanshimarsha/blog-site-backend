@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-6kd(1ph!h2hpw_b7&2)dh&692a$o2wc-ukhjw4z97ltxl&%8*z
 DEBUG = True
 
 ALLOWED_HOSTS = ['https://startupblogs.herokuapp.com/' ,
-'localhost'
+'localhost',
 '127.0.0.1']
 
 
@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     "django_extensions",
     "rest_framework",
     "rest_framework.authtoken",
-    
     "corsheaders",
     
     # "url_checks.apps.UrlChecksConfig",
