@@ -33,7 +33,7 @@ ALLOWED_HOSTS = ['https://startupblogs.herokuapp.com/' ,
 
 
 # Application definition
-
+CORS_ORIGIN_ALLOW_ALL=True
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -66,14 +66,14 @@ MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
 ]
-CORS_ORIGIN_ALLOW_ALL=True
+
 
 ROOT_URLCONF = 'src.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        "DIRS": [BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

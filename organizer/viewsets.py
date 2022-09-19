@@ -34,7 +34,7 @@ class StartupViewSet(ModelViewSet):
     required_scopes = ["startup"]
     serializer_class = StartupSerializer
 
-    @action(detail=True, methods=["HEAD", "GET", "POST"])
+    @action(detail=True, methods=["HEAD", "GET", "POST", "PATCH"])
     def tags(self, request, slug=None):
         """Relate a POSTed Tag to Startup in URI"""
         startup = self.get_object()
